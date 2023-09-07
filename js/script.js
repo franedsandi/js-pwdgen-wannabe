@@ -13,8 +13,10 @@ const colore = prompt('Inserire il colore preferito');
 const number = '23';
 
 //2.
-const message = 'Ciao ' + name + ' ' + lastname + '. <br> La tua (insicurissima) password e: <br>"'+ name + lastname + colore + number + '" ' ;
+const saluto = 'Ciao ' + name + ' ' + lastname
+const password = name + lastname + colore + number
+const message = saluto + '. <br> La tua (insicurissima) password e: <br>"'+ password + '" ' ;
+console.log(message);
 
 //3. 
 document.getElementById('output').innerHTML = message;
-console.log(message);
